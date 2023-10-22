@@ -1,12 +1,10 @@
 # Phase III Project: A Classification Model to Smartly Predict which Waterpoints Need Maintenance in Tanzania
 
 ## Introduction
-___
 
 This repository contains all the information (data, presentation, and other materials) for Phase III Project. In this project, classification model is utilized to predict which water pumps will need maintenance to ensure that clean, and potable water is available to communities across the United Republic of Tanzania.
 
 ## 1.0 Project Overview
-___
 
 This project investigates the data provided and produces a classification model that helps predict the water pumps that need maintenance.
 
