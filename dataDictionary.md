@@ -2,12 +2,12 @@
 
 This file gives the documentation about the dataset used for our prediction and the problem we are trying to solve.
 
-The [data folder]() contains all the data used in this project. The files included are `` Training set values`` - the dataset containing the characteristics of each water pump, and `` Training set labels`` - the functionality status of each water pump.
+The [data folder](https://github.com/figmulberry/phase-iii-project/tree/main/data) contains all the data used in this project. The files included are `` Training set values`` - the dataset containing the characteristics of each water pump, and `` Training set labels`` - the functionality status of each water pump.
 
 ### Data Features and Explanation
 
-The dataset was obtained from the Driven Data site and has been attributed to the [Taarifa](http://taarifa.org/) which aggregates the data from the [Tanzanian Ministry of Water](http://maji.go.tz/).
-The dataset supplied contains 59,400 records and 40 features (where 30 are categorical, 8 being numerical and the remaining 2 are date features).
+The dataset was obtained from the [Driven Data site](https://www.drivendata.org/competitions/7/pump-it-up-data-mining-the-water-table/data/) and has been attributed to the [Taarifa](http://taarifa.org/) which aggregates the data from the [Tanzanian Ministry of Water](http://maji.go.tz/).
+The dataset supplied contains 59,400 records and 40 features (where 30 are categorical, 8 are numerical and the remaining 2 are date features).
 
 The table below gives the information on the features that are contained in the dataset:
 
@@ -36,9 +36,9 @@ The table below gives the information on the features that are contained in the 
 | ``scheme_name`` | Who operates the waterpoint |
 | ``permit`` | If the waterpoint is permitted |
 | ``construction_year`` | Year the waterpoint was constructed |
-| ``extraction_type`` | The kind of extraction the waterpoint uses |
-| ``extraction_type_group`` | The kind of extraction the waterpoint uses |
-| ``extraction_type_class`` | The kind of extraction the waterpoint uses |
+| ``extraction_type`` | The kind of extraction the Waterpoint uses |
+| ``extraction_type_group`` | The kind of extraction the Waterpoint uses |
+| ``extraction_type_class`` | The kind of extraction the Waterpoint uses |
 | ``management`` | How the waterpoint is managed |
 | ``management_group`` | How the waterpoint is managed |
 | ``payment`` | What the water costs |
