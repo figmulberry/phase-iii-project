@@ -58,6 +58,7 @@ How possible is it to predict whether a water pump is either functional, functio
 
 1. To smartly predict the functional state of Tanzanian water pumps.
 2. To establish what impact data cleaning has on the overall success of our model
+3. Identify the feature importance in our data for analysis
 
 #### 3.2 Success Criteria
 
@@ -99,14 +100,11 @@ This included the following:
 
 We ended up choosing the Random Forest Classifier and tuned it for prediction of the water pump status.
 The confusion matrix for the model is represented as follows:
-────┬──────┬─────┬──────╮
-│    │    0 │   1 │    2 │
-├────┼──────┼─────┼──────┤
-│  0 │ 5497 │ 426 │  583 │
-├────┼──────┼─────┼──────┤
-│  1 │  342 │ 373 │   98 │
-├────┼──────┼─────┼──────┤
-│  2 │  880 │ 125 │ 3556 │
+|    |   0  | 1   |   2  |
+|----|------|-----|------|
+|  0 | 5497 | 426 |  583 |
+|  1 |  342 | 373 |   98 |
+|  2 |  880 | 125 | 3556 |
 
 ## Conclusions
 
