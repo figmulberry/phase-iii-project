@@ -19,11 +19,26 @@ def assessHighCardinality(data):
 # ***************************************************************************************************
 """
 This function checks for placeholders in the dataframe
+We shall only print a few records since there are so many if printed all
 """
-def assessPlaceholders(data):
+def assessPlaceholders(data, num_records=2): # if you want to see all the records, you can assume the num_records part
+    tables = []
     for column in data.columns:
-        table = data[column].value_counts(normalize=True).reset_index()
-        print(tabulate(table, headers=['Value', 'Count'], tablefmt='simple_outline'))
+        table = data[column].value_counts(normalize=True).reset_index().head(num_records)
+        tables.append(tabulate(table, headers=['Value', 'Count'], tablefmt='simple_outline'))
+
+    if len(tables) <= 5:
+        print("\n".join("\t\t".join(t) for t in zip(*[table.splitlines() for table in tables])))
+    else:
+        mid = len(tables) // 2
+        tables1 = tables[:mid]
+        tables2 = tables[mid:]
+
+        print("cont.")
+        print("\n".join("\t\t".join(t) for t in zip(*[table.splitlines() for table in tables1])))
+        
+        print("\ncont.")
+        print("\n".join("\t\t".join(t) for t in zip(*[table.splitlines() for table in tables2])))
 
 # ***************************************************************************************************
 """
